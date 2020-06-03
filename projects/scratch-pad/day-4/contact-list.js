@@ -68,34 +68,41 @@ function makeContactList() {
         findContact: function(fullName){
         //go through all contacts 
             for(var i = 0; i <= contacts.length; i++){
-            //if the name is found within the contacts list
-                if(fullName === contacts[i].nameFirst + ' ' + contacts[i].nameLast){
+            //if the first and last name is found within the contacts list
+                if(fullName === contacts[i]['nameFirst'] + ' ' + contacts[i]['nameLast']){
                 //return the contact object   
-                    return contacts[i].nameFirst + ' ' + contacts[i].nameLast;
-            //if the contact is not found within the contacts list
+                    return contacts[i];
+            //return undefined by default
                 }else {
-                    //return undefined
+                   
                     return undefined;
                 }
             }
         },
         //4. removeContact(contact)
-        //remove a contact from the list
-        removeContact: function(){
-            delete makeContact.nameFirst;
+        //remove a contact object from the contact list
+        removeContact: function(contact){
+            for (var i = 0; i <= contacts.length; i++){
+            //if a contact object is matching an item in the contact list
+                if(contacts[i] === contact){
+                //use a method that will have a starting index and state how many to cut off
+                    return contacts.splice(i, 1);
+                }
+            }
         },
         
         
         //add another function to chain
         printAllContactNames: function(){
-            //run through all name of the contact list
+            //run through all names of the contact list
             for(var i = 0; i < contacts.length; i++){
             //return contact full names separated by line breaks
-            return contacts[i] + '\n';
-            }
-        }
-    }
-}
+             contacts[i] + '\n';
+            }return contacts;
+        }   
+    }       
+}           
+
 
 
 

@@ -9,8 +9,8 @@
  * 
  * 2. Syntax for a named function: function name(){};
  * 
- * 3. A function is assigned to a variable by creating the variable and setting the 
- * function as a value: var name = function(){}
+ * 3. A function is assigned to a variable by creating a function expression:
+ * var name = function(){}
  * 
  * 4. Inputs of a function are specified by parameters.  Outputs are specified by a
  * return statement.

@@ -11,10 +11,15 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+//create an animal variable with an object literal value
 var animal = {};
+//use dot notation to give animal species key and a corresponding value
 animal.species = 'feline';
+//use bracket notation to give animal a name key with a value
 animal['name'] = 'Lester';
+//give animal a key called noises with an empty array
 animal.noises = [];
+//print animal object to the console
 console.log(animal);
 
 
@@ -33,6 +38,8 @@ noises.push('meowmeow');
 noises.unshift('roar');
 
 noises.push('ROAAARR');
+
+noises.push('Raaaer');
 console.log(noises.length);
 
 console.log(noises.length-1);
@@ -43,16 +50,19 @@ console.log(noises);
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-noises = ['animal'['noises']];
+//assign noises 
+animal['noises'] = noises;
+animal.noises = 'memeoww';
+console.log(animal);
 
 
 /* *******************************************************************
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ * Array and bracket notation
  * 2. What are the different ways of accessing elements on arrays?
- *
+ * They can be accessed through bracket notation, pop, and shift methods.
  * *******************************************************************
  */
 
@@ -68,15 +78,41 @@ noises = ['animal'['noises']];
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
-
+var animals = [];
+animals.push(animal);
+console.log(animal);
+var duck = {
+    species: 'duck',
+    name: 'Jerome',
+    noises: ['quack', 'honk', 'sneeze', 'woosh']
+};
+animals.push(duck);
+console.log(animals);
+var hamster = {
+    species: 'hamster',
+    name: 'Totoro',
+    noises: ['squeak', 'poof']
+};
+animals.push(hamster);
+var snake = {
+    species: 'reptile',
+    name: 'slytherin',
+    noises: ['ssss', 'silence']
+};
+animals.push(snake);
+console.log(animals);
+console.log(animals.length);
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
-
+//choose an array to hold the list of frineds that will be in there
+var friends = [];
+//create a function called getRandom with the animals array and returns the random index
+function getRandom(array){
+    return array[Math.floor(Math.random() * array.length)];
+}
+friends.push(getRandom(animals));
+console.log(friends);
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
