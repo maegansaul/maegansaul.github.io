@@ -204,10 +204,15 @@ if(stringOne < stringTwo){
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-if (stringOne > stringTwo){
+//if stringOne is lower than stringTwo
+if (stringOne > stringTwo){          //if statement
+    //then 1 need to be returned
     return 1;
+//if stringTwo is lower than stringOne
 }else if(stringOne < stringTwo){
+    //then -1 needs to be returned
     return -1;
+//default statement of 0
 }else{
     return 0;
 }

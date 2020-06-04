@@ -22,10 +22,14 @@
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     //show input in reverse
-    var arr = [];
-    for (var i = input.length-1; i >= 0; i--){
+    //create an empty array for values to be held
+    var arr = [];  //need data to be stored
+    //go through all of the input values
+    for (var i = input.length-1; i >= 0; i--){ //stop the loop at the end of the input 
+    //place the information from the loop into the array you created
      arr.push(input[i]);
     }
+    //bring together the strings
     return arr.join(''); 
     
     
