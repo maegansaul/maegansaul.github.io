@@ -93,8 +93,8 @@ console.log(favoriteColor); // prints => green
  */
  
 //using var//
-// console.log(goodShow); // prints => undefined
-//  var goodShow = "Ozark";
+console.log(goodShow); // prints => undefined
+ var goodShow = "Ozark";
  
  
 //using const//

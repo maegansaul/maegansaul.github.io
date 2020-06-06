@@ -32,8 +32,8 @@
  
  //1. var hoisting//
  
-//console.log(hoistingExample);             // prints => undefined
-//var hoistingExample = "I'm hoisted to the top!"; 
+console.log(hoistingExample);        // prints => undefined
+var hoistingExample = "I'm hoisted to the top!"; 
 /**
  * NOTE: Even though the declaration for var is hoisted for memory, the assigned 
  * value is not hoisted with it.

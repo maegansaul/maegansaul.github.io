@@ -23,7 +23,9 @@
   //2. String//
   /**
    * A string can store text inside single or double quotation marks.
-   * With the use of contatenation, strings can be comebined to form another value
+   * With the use of contatenation, strings can be combined to form another value.
+   * When characters are stored in a string, it becomes a string object.  A string
+   * also has array properties, using bracket notation to access individual characters.
    */
    
   var firstName = "Maegan";
@@ -149,11 +151,10 @@
   //9. NaN//
   /**
    * 'Not a number' is returned when a mathematical problem cannot be solved, or to 
-   * determine if something is not a number.  The property isNaN() can be used to decide
-   * if a value is not a number.  A boolean value returns the outcome of this property.
+   * determine if something is not a number.  
    */
-   isNaN(4 + 4);      //prints => false
-   isNaN('string');   //prints => true
+   // let number = 4 + undefined;
+   // console.log(number);  // prints => NaN
    
   //10. Infinity and -Infinity//
   /**

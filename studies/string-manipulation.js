@@ -21,11 +21,23 @@
  */
  
  //1.String Manipulation With Operators//
+ 
  /**
-  * Using operators can create and manipulate a string.  The concatenation 
-  * operator will combine strings to create a new value.  
+  * Using operators can create and manipulate strings.  
   */
   
+  let expo = 4;
+  expo **= 2;
+  console.log(expo); // prints => 16
+  /**
+   * NOTE: The exponentiation assignment operator takes the exponent of
+   * a chosen value.
+   */
+   
+  let compare = (4 !== 2);
+  console.log(compare);   // prints => true
+  //NOTE: the bang operator gives the opposite boolean value
+ 
   var pieceOfSentence = 'It\'s a nice day';
   var fullSentence = pieceOfSentence + ' ' + 'for a walk in the park';
   console.log(fullSentence); // prints => It's a nice day for a walk in the park
@@ -37,24 +49,44 @@
    */
    
   //2. String Manipulation Using Methods (String Methods)//
-  /**
-   * An example of string methods is using a method such as search() that will
-   * locate and return the position of the value of a string. 
-   */
   
- var summerTime = "Time for a crawfish boil!";
- console.log(summerTime.search('crawfish')); // prints => 11
+  
+  var summerTime = "Time for a crawfish boil!";
+  console.log(summerTime.search('crawfish')); // prints => 11
+ /**
+   * NOTE: An example of string methods is using a method such as search() that
+   * will locate and return the position of the value of a string. 
+   */
  
+  var crawfishBoil = ['crawfish', 'shrimp', 'potatoes', 'corn'];
+  console.log(crawfishBoil.slice(0,2)); // returns => [ 'crawfish', 'shrimp' ]
  /**
   * Slice method will take out a string and return the pulled values.
   * The first parameter represents the starting value that will be returned to
   * the console.  The second parameter is the final value.  The value before the
   * end parameter is pulled.
   */
- var crawfishBoil = ['crawfish', 'shrimp', 'potatoes', 'corn'];
- console.log(crawfishBoil.slice(0,2)); // returns => [ 'crawfish', 'shrimp' ]
+ 
+  const rep = 'replace me';
+  rep.replace('me', 'this'); //returns => replace this
+  /**
+   * NOTE: The replace method does not change the original value of the string.
+   * It simply returns a new string.
+   */
+  
+  const toUpper = 'uppercase';
+  toUpper.toUpperCase();  // returns => UPPERCASE
+ //NOTE: this method changes the value to all uppercase letters
+ 
+ const toLower = 'LOWERCASE';
+ toLower.toLowerCase();  // returns => lowercase
+ //NOTE: this method changes the value to all lowercase letters
  
  
+ let char = 'What character will be returned from this string?'
+ char.charAt(8);  // prints => r
+ //NOTE: charAt() returns the character from a string depending on the chosen index
  
- 
+ const string = 'Take out a character from this string';
+ string.substring(0, 8);  // returns => Take out
  

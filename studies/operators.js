@@ -9,7 +9,8 @@
  *
  * 1. Assignment operators assign values to its operand.  Assignent operators play
  * a part in initializing variables and creating function expressions.  Assignment 
- * operators are recognized by an equal sign.
+ * operators are recognized by addition, subtraction, division, mutiplication, remainder,
+ * and many more assignments.
  *
  * 2. Arithmetic operators add, subtract, multiply, divide, provide remainders, and 
  * much more. 
@@ -27,6 +28,8 @@
  *      1.) A condition with a question mark
  *      2.) An expression that executes if the block of code is true, with a colon
  *      3.) An expression that executes if the block of code is false
+ * If a condition resolved to true, the first expression will run.  If the condition is 
+ * false, the second expression runs. 
  */
  
  //1. Assignment Operators//
@@ -37,6 +40,18 @@
   var funnyNumber = 24;
   funnyNumber = 25;
   console.log(funnyNumber); //prints => 25
+  
+  let numeral = 10;
+  let divOperator = numeral /= 5;
+  console.log(divOperator);  // prints => 2
+  
+  let oneNumber = 20;
+  let mulitplyByTwo = oneNumber *= 2;
+  console.log(mulitplyByTwo); // prints => 40
+  
+  let thisRemains = 22/4;
+  thisRemains %= 5;  // prints => 0.5
+  //NOTE: The remainder assignment operator takes the remainder of the calculation
    
  //2. Arithmetic Operators//
  /**
@@ -100,6 +115,11 @@
   var weather = 'sunny';
   console.log(weather ? 'beautiful day' : 'it\'s raining');
   // prints => beautiful day
-  //NOTE: '?' represents 'if' and ':' represents 'else'
+  /**
+   * NOTE: '?' represents 'if' and ':' represents 'else'.
+   * Since the condition resolves to true, the first section of code will execute.
+   * If a different value were assigned to weather, the second section of code would
+   * have executed.
+   */
   
    

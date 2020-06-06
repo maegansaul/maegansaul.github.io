@@ -15,10 +15,13 @@
  * flow with another block of code matching.  There is no limitation for the 
  * amount of else-if statements that can be created.  
  * 
- * 3. If all other statements fail, an else statement will be ran last as default. 
+ * 3. If all other statements fail, an else statement will be ran last as default.
+ * With the if else condition as a whole, they are more reliable in situations 
+ * that require a boolean value.
  * 
  * 4. Switch statements perform the same actions as the previous statements.
- * The conditions determine which code block will run.
+ * The conditions determine which code block will run.  Switch statements are used 
+ * in situations that have fixed data values.
  */
  
 //1. If statements//

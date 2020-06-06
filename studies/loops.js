@@ -86,12 +86,23 @@
   
   };
   
+   for(var key in carInfo){
+     console.log(key);
+ }
+ /**
+  * prints => make
+  *           model
+  *           color
+  */
+  
   for(var key in carInfo){
-  console.log(carInfo[key]);
+    console.log(carInfo[key]);
  }
  /** prints => Chevrolet
   *            Impala
   *            pearl
   */
+
+  
  
  

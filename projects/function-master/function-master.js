@@ -77,10 +77,15 @@ return string.charAt(0).toUpperCase() + string.slice(1);
 //////////////////////////////////////////////////////////////////////
 
 function capitalizeAllWords(string) {
-var newArr = [];
-for(var i = 0; i <= string.length; i++){
-    newArr.push(string[i]);
-}
+//create something to hold the new values in the future
+var splitString = string.toLowerCase().split(' ');
+//create another array to hold the items
+var newArray = [];
+//go through all the contents of the array 
+for(var i = 0; i < splitString.length; i++){
+//push these values into the array
+    newArray.push(splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1));
+}return newArray.join(' ');
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -88,15 +93,22 @@ for(var i = 0; i <= string.length; i++){
 //////////////////////////////////////////////////////////////////////
 
 function welcomeMessage(object) {
-
+var array = [];
+if(key === 'name'){
+ for(var key in object){
+    array.push(object[key]).charAt(0).toUpperCase().slice(); 
+ }
+return 'Welcome ' + array + '!';
 }
-
+}
 //////////////////////////////////////////////////////////////////////
 // Function 8 - Profile Info /////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 function profileInfo(object) {
-
+ 
+   return (object['name'].charAt(0).toUpperCase() + object['name'].slice(1)) + ' is a ' + (object['species'].charAt(0).toUpperCase() + object['species'].slice(1));
+ 
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -104,7 +116,18 @@ function profileInfo(object) {
 //////////////////////////////////////////////////////////////////////
 
 function maybeNoises(object) {
+//reiterate: if the object has a noises array, return it as a string separated by a space
+//else return 'there are no noises'
+//if the object has a noises array
 
+var arr = [];  //create an array to hold the contents in
+for (var key in object){ //take out all of the objects
+arr.push(object[key]);  //put all the values from the array into the empty array
+
+//if the object has a noises array
+if(key === 'noises' && object['noises'].length >1){
+//return the array as a string separated by a space
+} return 
 }
 
 //////////////////////////////////////////////////////////////////////
